@@ -1,0 +1,58 @@
+.containerFooter {
+    height: calc(100vh - 100px);
+    background-color: #222;
+    display: flex;
+  }
+  
+  .itemFooter {
+    flex: 1;
+    position: relative;
+    display: flex;
+  }
+  
+  .itemFooter:last-child {
+    flex: 2;
+    padding: 50px;
+    justify-content: space-between;
+  }
+  
+  .cardFooter {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .titleFooter {
+    font-size: 25px;
+    color: #b7903c;
+  }
+  
+  .textFooter {
+    color: lightgray;
+    font-size: 20px;
+  }
+  
+  .motto {
+    color: rgb(211, 211, 211);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .containerFooter {
+      height: auto;
+      text-align: center;
+    }
+    .itemFooter:first-child {
+      display: none;
+    }
+  
+    .itemFooter {
+      flex-direction: column;
+    }
+  
+    .titleFooter {
+      font-size: 30px;
+    }
+  
+    .textFooter {
+      font-size: 20px;
+    }
+  }
